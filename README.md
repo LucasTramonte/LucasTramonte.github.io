@@ -18,7 +18,7 @@ Technical Skills: Python, SQL, AWS, PowerBI, C/C++
 
 **Undergraduate research fellow @ Council for Scientific and Technological Development - CNPq (September 2022 - August 2023)**
 
-- Conducted research on interpreting machine learning predictions for diagnosing SARS-CoV-2 from symptoms, using SHAP ((SHapley Additive exPlanations) and LIME (Local Interpretable Model-agnostic Explanations) methods - [github](https://github.com/LucasTramonte/SARS-CoV-2-Prediction-based-on-symptoms)
+- Conducted research on interpreting machine learning predictions for diagnosing SARS-CoV-2 from symptoms, using SHAP and LIME (Local Interpretable Model-agnostic Explanations) methods - [github](https://github.com/LucasTramonte/SARS-CoV-2-Prediction-based-on-symptoms)
 - The project was supported by BIOS (Brazilian Institute of Data Science), and carried out at the Data Analysis and Decision Support Laboratory (LAD2), FCA/Unicamp.
 
 ### Projects
@@ -26,6 +26,14 @@ Technical Skills: Python, SQL, AWS, PowerBI, C/C++
 **SARS-CoV-2 Maternal Impact**
 
 Implemented data processing and statistical analysis of scientific research on the impact of different SARS-CoV-2 variants on maternal outcomes (ICU admission and mortality) in Brazil, using Python and Power BI - [github](https://github.com/LucasTramonte/Analysis-SARS-CoV-2-variants)
+
+**Radiological-pollution-monitoring-anomaly-detection**
+
+Developed an anomaly detection system for radiological pollution monitoring using gamma photon counting sensors. Applied unsupervised learning methods, including LSTM models, to detect anomalies in time series data - [github](https://github.com/LucasTramonte/Radiological-pollution-monitoring-anomaly-detection/blob/main/README.md)
+
+**Welding-Quality-Prediction**
+
+Predicting steel weld quality using data-driven approaches to extract, standardize, and explore welding expertise, using Python and Streamlit - [github](https://github.com/LucasTramonte/Welding-Quality-Prediction)
 
 **MDVRP-Magazine-Luiza**
 
