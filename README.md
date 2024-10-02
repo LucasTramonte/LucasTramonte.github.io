@@ -2,13 +2,14 @@
 Technical Skills: Python, SQL, AWS, PowerBI, C/C++
 
 ### Education
-- M.S., Engineering Degree | Ecole CentraleSupélec, Université Paris-Saclay  (April 2025)
-- B.S., Industrial Engineering | State University of Campinas - Unicamp (December 2024)
+- M.S., Engineering Degree | Ecole CentraleSupélec, Université Paris-Saclay  (2023 - 2025)
+- B.S., Industrial Engineering | State University of Campinas - Unicamp (2020 - 2024)
 
 ### Work Experience
 **Data Scientist Intern @ FlexSim (February 2023 - April 2023)**
 
-- Conducted an analysis of possible no-code Machine Learning frameworks, which resulted in RapidMiner being identified as the best viable option due to its ease of use and available features. Instructed the ML engineers of the company on how to use this tool, and the tool adoption resulted in a 30% reduction in the number of tickets the department receives quarter-over-quarter
+- Conducted an analysis of possible no-code Machine Learning frameworks, which resulted in RapidMiner being identified as the best viable option due to its ease of use and available features. 
+    - Instructed the ML engineers of the company on how to use this tool, and the tool adoption resulted in a 30% reduction in the number of tickets the department receives quarter-over-quarter
 - Automated data import in the software, enabling the team to use the software without crashes when handling large datasets, by integrating SQL queries with simulation models using C++.
 
 **Data Science Intern @ Eldorado Institute (February 2022 - September 2022)**
