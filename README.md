@@ -3,7 +3,6 @@ Technical Skills: Python, SQL, AWS, PowerBI, C/C++
 
 ### Education
 - M.S., Engineering Degree | Ecole CentraleSupélec, Université Paris-Saclay  (April 2025)
-- 
 - B.S., Industrial Engineering | State University of Campinas - Unicamp (December 2024)
 
 ### Work Experience
