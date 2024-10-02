@@ -18,7 +18,7 @@ Technical Skills: Python, SQL, AWS, PowerBI, C/C++
 
 **Undergraduate research fellow @ Council for Scientific and Technological Development - CNPq (September 2022 - August 2023)**
 
-- Conducted research on interpreting machine learning predictions for diagnosing SARS-CoV-2 from symptoms, using SHAP ((SHapley Additive exPlanations) and LIME (Local Interpretable Model-agnostic Explanations) methods. 
+- Conducted research on interpreting machine learning predictions for diagnosing SARS-CoV-2 from symptoms, using SHAP ((SHapley Additive exPlanations) and LIME (Local Interpretable Model-agnostic Explanations) methods - [github](https://github.com/LucasTramonte/SARS-CoV-2-Prediction-based-on-symptoms)
 - The project was supported by BIOS (Brazilian Institute of Data Science), and carried out at the Data Analysis and Decision Support Laboratory (LAD2), FCA/Unicamp.
 
 ### Projects
@@ -34,3 +34,7 @@ Optimization project for the Brazilian retail company Magazine Luiza by addressi
 **Optimization-AirFrance**
 
 Developed an optimization project for AirFrance to enhance passenger distribution and satisfaction, using Python and the Gurobi optimization solver - [github](https://github.com/LucasTramonte/Optimization-AirFrance)
+
+**Prediction of the SWOT analysis**
+
+Development of a collective multicriteria decision-making method to select elements of the SWOT matrix, serving as a basis for the strategies of the university's administrative body - [github](https://github.com/LucasTramonte/swot-matrix-group-decision)
