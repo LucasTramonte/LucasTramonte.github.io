@@ -714,31 +714,31 @@
     </div>
     <script src="js/bundle.js"></script>
   
-    <script>
-      // Elementos de alternância
-      const themeToggle = document.getElementById("theme-toggle");
-      const themeIcon = document.getElementById("theme-icon");
-      const body = document.body;
-    
-      // Função para alternar o tema
-      function toggleTheme() {
-        const isDark = body.classList.toggle("dark-mode");
-        themeIcon.classList = isDark
-          ? "fas fa-2x fa-sun"
-          : "fas fa-2x fa-moon";
-        localStorage.setItem("theme", isDark ? "dark" : "light");
-      }
-    
-      // Evento para alternância de tema
-      themeToggle.addEventListener("click", toggleTheme);
-    
-      // Carregar tema salvo no localStorage
-      const savedTheme = localStorage.getItem("theme");
-      if (savedTheme === "dark") {
-        body.classList.add("dark-mode");
-        themeIcon.classList = "fas fa-2x fa-sun";
-      }
-    </script>
+  <script>
+    // Elementos de alternância
+    const themeToggle = document.getElementById("theme-toggle");
+    const themeIcon = document.getElementById("theme-icon");
+    const body = document.body;
+  
+    // Função para alternar o tema
+    function toggleTheme() {
+      const isDark = body.classList.toggle("dark-mode");
+      themeIcon.classList = isDark
+        ? "fas fa-2x fa-sun"
+        : "fas fa-2x fa-moon";
+      localStorage.setItem("theme", isDark ? "dark" : "light");
+    }
+  
+    // Evento para alternância de tema
+    themeToggle.addEventListener("click", toggleTheme);
+  
+    // Carregar tema salvo no localStorage
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      body.classList.add("dark-mode");
+      themeIcon.classList = "fas fa-2x fa-sun";
+    }
+  </script>
     
 
   </body>
