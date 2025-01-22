@@ -714,29 +714,32 @@
     </div>
     <script src="js/bundle.js"></script>
   
+
   <script>
-    // Elementos de alternância
+    // Referências aos elementos
     const themeToggle = document.getElementById("theme-toggle");
     const themeIcon = document.getElementById("theme-icon");
     const body = document.body;
   
     // Função para alternar o tema
     function toggleTheme() {
-      const isDark = body.classList.toggle("dark-mode");
-      themeIcon.classList = isDark
-        ? "fas fa-2x fa-sun"
-        : "fas fa-2x fa-moon";
-      localStorage.setItem("theme", isDark ? "dark" : "light");
+      const isDark = body.classList.toggle("dark-mode"); // Adiciona ou remove a classe dark-mode
+      themeIcon.className = isDark ? "fas fa-2x fa-sun" : "fas fa-2x fa-moon"; // Altera o ícone
+      localStorage.setItem("theme", isDark ? "dark" : "light"); // Salva o tema no localStorage
     }
   
-    // Evento para alternância de tema
-    themeToggle.addEventListener("click", toggleTheme);
+    // Adiciona evento ao botão
+    if (themeToggle) {
+      themeToggle.addEventListener("click", toggleTheme);
+    } else {
+      console.error("Botão de alternância de tema não encontrado!");
+    }
   
-    // Carregar tema salvo no localStorage
+    // Carrega o tema salvo no localStorage ao carregar a página
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme === "dark") {
       body.classList.add("dark-mode");
-      themeIcon.classList = "fas fa-2x fa-sun";
+      themeIcon.className = "fas fa-2x fa-sun";
     }
   </script>
     
