@@ -6,9 +6,8 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
   entry: './src/index.js',
-  watch: true,
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: __dirname,
     filename: 'js/bundle.js'
   },
   module: {

@@ -5,6 +5,43 @@ require('flickity-imagesloaded');
 
 var $carousels = new Array();
 
+function isDebugEnabled() {
+    try {
+        return localStorage.getItem('debug') === '1';
+    } catch (error) {
+        return false;
+    }
+}
+
+function auditLog(eventName, payload) {
+    if (!isDebugEnabled()) {
+        return;
+    }
+
+    var timestamp = new Date().toISOString();
+    if (typeof payload === 'undefined') {
+        console.info('[portfolio][' + timestamp + '] ' + eventName);
+        return;
+    }
+
+    console.info('[portfolio][' + timestamp + '] ' + eventName, payload);
+}
+
+window.addEventListener('error', function (event) {
+    auditLog('runtime:error', {
+        message: event.message,
+        file: event.filename,
+        line: event.lineno,
+        column: event.colno
+    });
+});
+
+window.addEventListener('unhandledrejection', function (event) {
+    auditLog('runtime:unhandledrejection', {
+        reason: event.reason
+    });
+});
+
 // Modals
 
 var rootEl = document.documentElement;
@@ -31,8 +68,14 @@ if ($modalCloses.length > 0) {
 
 function openModal(target) {
     var $target = document.getElementById(target);
+    if (!$target) {
+        auditLog('modal:missing-target', { target: target });
+        return;
+    }
+
     rootEl.classList.add('is-clipped');
     $target.classList.add('is-active');
+    auditLog('modal:open', { target: target });
     var carouselId = target + '-carousel';
 
     if (document.querySelector('#' + carouselId)) {
@@ -54,6 +97,7 @@ function closeModals() {
     $modals.forEach(function ($el) {
         $el.classList.remove('is-active');
     });
+    auditLog('modal:close-all');
 }
 
 // Functions

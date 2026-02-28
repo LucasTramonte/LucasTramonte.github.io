@@ -5,6 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="img/me-big.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.bundle.css" />
+    <style>
+      .theme-toggle {
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+      }
+
+      body.dark-mode {
+        background-color: #0f1115;
+        color: #e5e7eb;
+      }
+
+      body.dark-mode .section,
+      body.dark-mode .footer,
+      body.dark-mode .modal-card-body {
+        background-color: #0f1115;
+        color: #e5e7eb;
+      }
+
+      body.dark-mode .title,
+      body.dark-mode .subtitle,
+      body.dark-mode .content,
+      body.dark-mode .heading,
+      body.dark-mode strong {
+        color: #f3f4f6;
+      }
+
+      body.dark-mode .card,
+      body.dark-mode .notification,
+      body.dark-mode .modal-card,
+      body.dark-mode .modal-card-head,
+      body.dark-mode .modal-card-foot {
+        background-color: #1a1d24;
+        color: #e5e7eb;
+      }
+
+      body.dark-mode .card,
+      body.dark-mode .modal-card,
+      body.dark-mode .modal-card-head,
+      body.dark-mode .modal-card-foot,
+      body.dark-mode .modal-card-body {
+        border-color: #2a2f3a;
+      }
+
+      body.dark-mode .tag {
+        background-color: #2b3341;
+        color: #f3f4f6;
+      }
+
+      body.dark-mode a {
+        color: #93c5fd;
+      }
+
+      body.dark-mode hr {
+        background-color: #2a2f3a;
+      }
+    </style>
     <script src="https://kit.fontawesome.com/4e5a72c756.js"></script>
   </head>
   <body>
@@ -81,10 +138,14 @@
             </a>
           </div>
           <div class="navbar-item">
-            <a id="theme-toggle" class="icon is-large has-text-light">
+            <button
+              id="theme-toggle"
+              class="icon is-large has-text-light theme-toggle"
+              type="button"
+              aria-label="Toggle dark mode"
+            >
               <i id="theme-icon" class="fas fa-2x fa-moon"></i>
-              <!-- Icon for Dark mode -->
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -122,9 +183,11 @@
         <h1 class="title">About Me</h1>
         <hr />
         <p>
-          Engineering student at CentraleSupélec, France. Final year specialization in Artificial Intelligence.<br /><br />
+          Machine Learning Engineer at Aprix with an international background in AI, Data Science, and Operations Research. I hold a double degree in Engineering from CentraleSupélec (Paris) and the State University of Campinas (Unicamp), with focus on AI and Optimization.<br /><br />
 
-          I have experience in data science and analytics, including descriptive statistics, supervised and unsupervised machine learning models, as well as knowledge of tools and languages such as SQL, Python, C/C++, and Power BI. I enjoy applying these skills to solve problems and work with data-driven solutions.
+          My experience spans diverse industrial contexts, from predicting short-term labor flexibility at Amazon in Luxembourg to automating hardware fault detection for Motorola at the Eldorado Institute. I also worked on high-volume data integration and simulation at FlexSim, automating data imports and evaluating predictive frameworks to accelerate team adoption.<br /><br />
+
+          I work primarily with Python, SQL, and AWS, with focus on transparent and actionable analytics for business teams. I am fluent in English and French and motivated by connecting technical infrastructure with efficient business operations.
 
         </p>
       </div>
@@ -138,29 +201,178 @@
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img src="img/flexsim_brasil_logo.jpg" alt="Placeholder image" />
+                  <img src="img/aprix_logo.jpg" alt="Aprix logo" />
                 </figure>
               </div>
               <div class="media-content">
-                <p class="title is-4"> FlexSim</p>
+                <p class="title is-4">Aprix</p>
                 <p class="subtitle is-6">
-                  Data Scientist Intern -
-                  <time datetime="2023-2">February 2023</time> -
-                  <time datetime="2023-4">April 2023</time>
+                  Associate Machine Learning Engineer -
+                  <time datetime="2026-2">February 2026</time> -
+                  <time datetime="present">Present</time>
                 </p>
+                <p class="subtitle is-7">Full-time · Brazil (Remote)</p>
               </div>
             </div>
             <div class="content">
               <ul>
                 <li>
-                  Conducted an analysis of possible no-code Machine Learning frameworks, 
-                  which resulted in RapidMiner being identified as the best viable option 
-                  due to its ease of use and available features. Instructed the ML engineers 
-                  of the company on how to use this tool, and the tool adoption resulted in a 30% reduction 
-                  in the number of tickets the department receives quarter-over-quarter
+                  Leading the modeling and production deployment of a dual-strategy ML system integrating Pipedrive, Google Sheets, and Discord APIs.
                 </li>
                 <li>
-                  Automated data import in the software, enabling the team to use the software without crashes when handling large datasets, by integrating SQL queries with simulation models using C++.
+                  Building a Revenue Forecast model for Finance monthly projections and a Sales Acceleration model to prioritize high-potential leads for the Commercial team.
+                </li>
+                <li>
+                  Improving assertiveness in new revenue prediction through production-ready ML and MLOps practices.
+                </li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Machine Learning</span>
+                <span class="tag">MLOps</span>
+                <span class="tag">Python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-gap">
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="img/aprix_logo.jpg" alt="Aprix logo" />
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">Aprix</p>
+                <p class="subtitle is-6">
+                  AI Trainee -
+                  <time datetime="2025-11">November 2025</time> -
+                  <time datetime="2026-1">January 2026</time>
+                </p>
+                <p class="subtitle is-7">Apprenticeship · Brazil (Remote)</p>
+              </div>
+            </div>
+            <div class="content">
+              <ul>
+                <li>
+                  Automated urgent customer issue flow from OTRS into Development Kanban boards, reducing response time to minutes and ensuring complete documentation for major clients.
+                </li>
+                <li>
+                  Developed a Monte Carlo engine to predict completion dates across 12 business units, replacing manual risk mapping and supporting C-level and PM decision-making.
+                </li>
+                <li>
+                  Created a governance bot to flag unanswered requests older than 7 days, saving operations review time and reducing support delays.
+                </li>
+              </ul>
+              <p>
+                Aprix is a SaaS company providing AI-driven pricing solutions for large industries in Latin America, with focus on scalable data products for pricing and operations.
+              </p>
+              <div class="tags">
+                <span class="tag">Azure DevOps</span>
+                <span class="tag">n8n</span>
+                <span class="tag">Automation</span>
+                <span class="tag">Monte Carlo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-gap">
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="img/amazon_logo.jpg" alt="Amazon logo" />
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">Amazon</p>
+                <p class="subtitle is-6">
+                  Business Intelligence Engineer Intern -
+                  <time datetime="2025-4">April 2025</time> -
+                  <time datetime="2025-10">October 2025</time>
+                </p>
+                <p class="subtitle is-7">Internship · Luxembourg (On-site)</p>
+              </div>
+            </div>
+            <div class="content">
+              <ul>
+                <li>
+                  Led research and proof of concept to predict short-term labor flexibility in Amazon's EU sort center network, addressing temporal dependency, class imbalance, and site-level variability.
+                </li>
+                <li>
+                  Developed ML pipelines in AWS SageMaker Studio and delivered a 27.4% improvement over baseline same-day forecasts across 10 UK sort centers.
+                </li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">SQL</span>
+                <span class="tag">AWS SageMaker</span>
+                <span class="tag">Forecasting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-gap">
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="img/cnpq.jpg" alt="CNPq logo" />
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">CNPq - Conselho Nacional de Desenvolvimento Científico e Tecnológico</p>
+                <p class="subtitle is-6">
+                  Undergraduate Research Fellow -
+                  <time datetime="2022-9">September 2022</time> -
+                  <time datetime="2023-8">August 2023</time>
+                </p>
+                <p class="subtitle is-7">Limeira, São Paulo, Brazil (On-site)</p>
+              </div>
+            </div>
+            <div class="content">
+              <ul>
+                <li>
+                  Conducted research on interpretable ML for SARS-CoV-2 diagnosis from symptoms using SHAP and LIME at LAD2/FCA-Unicamp, supported by BIOS.
+                </li>
+                <li>
+                  <a href="https://github.com/LucasTramonte/SARS-CoV-2-Prediction-based-on-symptoms" target="_blank">Link to the project</a>
+                </li>
+              </ul>
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Interpretability</span>
+                <span class="tag">SHAP</span>
+                <span class="tag">LIME</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-gap">
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="img/flexsim_brasil_logo.jpg" alt="FlexSim logo" />
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">FlexSim Brasil</p>
+                <p class="subtitle is-6">
+                  Data Scientist Intern -
+                  <time datetime="2023-2">February 2023</time> -
+                  <time datetime="2023-4">April 2023</time>
+                </p>
+                <p class="subtitle is-7">Campinas, São Paulo, Brazil (Hybrid)</p>
+              </div>
+            </div>
+            <div class="content">
+              <ul>
+                <li>
+                  Evaluated no-code ML frameworks and selected RapidMiner as the best fit for usability and features; trained ML engineers on adoption.
+                </li>
+                <li>
+                  Automated high-volume data import by integrating SQL queries with simulation models in C++.
                 </li>
               </ul>
               <div class="tags">
@@ -176,79 +388,32 @@
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img src="img/instituto_de_pesquisas_eldorado_logo.jpg" alt="Placeholder image" />
+                  <img src="img/instituto_de_pesquisas_eldorado_logo.jpg" alt="Eldorado logo" />
                 </figure>
               </div>
               <div class="media-content">
-                <p class="title is-4">Eldorado Institute</p>
+                <p class="title is-4">Instituto de Pesquisas Eldorado</p>
                 <p class="subtitle is-6">
                   Data Scientist Intern -
                   <time datetime="2022-2">February 2022</time> -
                   <time datetime="2022-9">September 2022</time>
                 </p>
+                <p class="subtitle is-7">Internship · Campinas, São Paulo, Brazil (Remote)</p>
               </div>
             </div>
             <div class="content">
               <ul>
                 <li>
-                  Implemented data pre-processing routines and tested machine learning models
-                  to detect faults in mobile phone batteries.
+                  Implemented preprocessing routines and tested ML models for fault detection in mobile phone batteries in an R&D project funded by Motorola.
                 </li>
                 <li>
-                  Improved fault detection precision to 73% by reducing false positives, 
-                  optimizing analysts’ time and resources by 27% through the use of Python 
-                  and interpretable machine learning techniques, such as SHAP (SHapley Additive exPlanations)
+                  Improved fault detection precision to 73% by reducing false positives with Python and interpretable ML methods such as SHAP.
                 </li>
               </ul>
               <div class="tags">
                 <span class="tag">Python</span>
-                <span class="tag">Scikit-Learn</span>
-                <span class="tag">Interpretability</span>
+                <span class="tag">Data Science</span>
                 <span class="tag">SHAP</span>
-                <span class="tag">Mobile Phone Batteries</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card card-gap">
-          <div class="card-content">
-            <div class="media">
-              <div class="media-left">
-                <figure class="image is-48x48">
-                  <img src="img/cnpq.jpg" alt="Placeholder image" />
-                </figure>
-              </div>
-              <div class="media-content">
-                <p class="title is-4">Council for Scientific and Technological Development - CNPq</p>
-                <p class="subtitle is-6">
-                  Undergraduate research fellow  - <time datetime="2022-9">September 2022</time> -
-                  <time datetime="2023-8">August 2023</time>
-                </p>
-              </div>
-            </div>
-            <div class="content">
-              <ul>
-                <li>
-                  Conducted research on interpreting machine learning predictions for 
-                  diagnosing SARS-CoV-2 from symptoms, using SHAP and LIME 
-                  (Local Interpretable Model-agnostic Explanations) methods.
-
-                  <a href="https://github.com/LucasTramonte/SARS-CoV-2-Prediction-based-on-symptoms" target="_blank"
-                >Link to the project</a
-              >
-                </li>
-                <li>
-                  The project was supported by BIOS (Brazilian Institute of Data Science), 
-                  and carried out at the Data Analysis and Decision Support Laboratory (LAD2), FCA/Unicamp.
-                </li>
-              </ul>
-              <div class="tags">
-                <span class="tag">Python</span>
-                <span class="tag">Scikit-Learn</span>
-                <span class="tag">Interpretability</span>
-                <span class="tag">SHAP</span>
-                <span class="tag">LIME</span>
-                <span class="tag">Healthcare</span>
               </div>
             </div>
           </div>
@@ -711,38 +876,9 @@
       </div>
     </div>
     
-    </div>
     <script src="js/bundle.js"></script>
-  
-
-  <script>
-    // Referências aos elementos
-    const themeToggle = document.getElementById("theme-toggle");
-    const themeIcon = document.getElementById("theme-icon");
-    const body = document.body;
-  
-    // Função para alternar o tema
-    function toggleTheme() {
-      const isDark = body.classList.toggle("dark-mode"); // Adiciona ou remove a classe dark-mode
-      themeIcon.className = isDark ? "fas fa-2x fa-sun" : "fas fa-2x fa-moon"; // Altera o ícone
-      localStorage.setItem("theme", isDark ? "dark" : "light"); // Salva o tema no localStorage
-    }
-  
-    // Adiciona evento ao botão
-    if (themeToggle) {
-      themeToggle.addEventListener("click", toggleTheme);
-    } else {
-      console.error("Botão de alternância de tema não encontrado!");
-    }
-  
-    // Carrega o tema salvo no localStorage ao carregar a página
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-      body.classList.add("dark-mode");
-      themeIcon.className = "fas fa-2x fa-sun";
-    }
-  </script>
-    
+    <script src="js/runtime-audit.js"></script>
+    <script src="js/theme-toggle.js"></script>
 
   </body>
 </html>

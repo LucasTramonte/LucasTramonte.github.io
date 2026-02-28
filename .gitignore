@@ -1,1 +1,5 @@
 node_modules/
+
+# Local audit/runtime logs
+logs/*.log
+!logs/README.md
