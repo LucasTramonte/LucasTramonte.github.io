@@ -1,0 +1,81 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=0.75in,top=0.5in,bottom=0.4in]{geometry}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=blue]{hyperref}
+\usepackage{fontawesome5}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\titleformat{\section}{\scshape\raggedright\large}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{7pt}{4pt}
+
+\newcommand{\entry}[4]{%
+  \textbf{#1}\hfill #2\\[-1pt]
+  \textit{#3}\hfill #4\par\vspace{1pt}}
+\newenvironment{bul}{\begin{itemize}[leftmargin=1.5em,label=--,itemsep=0pt,topsep=1pt,parsep=0pt]}{\end{itemize}}
+
+\begin{document}
+
+\begin{center}
+  {\Huge \textbf{Lucas Tramonte}}\\[6pt]
+  \small
+  \faGithub\ \href{https://github.com/LucasTramonte}{\underline{github.com/LucasTramonte}} \quad
+  \faFile\ \href{https://lucastramonte.github.io/}{\underline{Portfolio}} \quad
+  \faLinkedin\ \href{https://www.linkedin.com/in/lucastramonte01/}{\underline{LucasTramonte}} \quad
+  \faEnvelope\ \href{mailto:lucastramonte3@gmail.com}{\underline{lucastramonte3@gmail.com}}
+\end{center}
+
+\section{Technical Skills}
+\small
+\textbf{Languages \& Frameworks}: Python, SQL, Scikit-Learn, Hugging Face, FastAPI, Angular, Pandas, NumPy, SciPy\\
+\textbf{Machine Learning \& AI}: MLflow, Forecasting, Causal Inference (DR/AIPW), Explainable AI, Multimodal RAG, AI Agents (MCP)\\
+\textbf{Data, Cloud \& MLOps}: ETL pipelines, PostgreSQL, AWS SageMaker, AWS EC2, Google Cloud (Cloud Run, Cloud SQL), Azure Functions, Terraform, CI/CD, Docker, Git
+
+\section{Experience}
+\small
+\entry{Avahi}{Nov. 2026 -- Present}{Data Scientist (Remote)}{}
+\vspace{2pt}
+
+\entry{Aprix}{Nov. 2025 -- Oct. 2026}{AI Engineer | Machine Learning Engineer (Remote, Brazil)}{}
+\begin{bul}
+\item Managed the full lifecycle of ML models, from conception to production, across sales, marketing, governance, and finance, serving as the company's cross-functional AI reference, mentoring engineers, and reporting weekly to five C-level stakeholders.
+\item Designed and built Aprix Hub, the internal operations platform, end to end: 30+ active users, 25+ business modules (payroll, payables, financial closing, receivables, revenue forecasting, OKRs) and 10 external integrations, replacing spreadsheet workflows. Used Python (FastAPI, SQLAlchemy, Alembic), Angular, and PostgreSQL on Google Cloud (Cloud Run, Cloud SQL, Cloud Armor) with CI/CD and change-gated releases. Built Aprix Brain, giving AI agents secure access to company knowledge through 30+ tools, with Google SSO, OAuth 2.1, RBAC across 10 roles, audit trails, and personal-data masking.
+\item Achieved $<$7\% average revenue forecasting error across H1 2026 with an end-to-end sales win propensity ML model integrated with Pipedrive, MLflow, AWS EC2, and Docker, fully automating training, inference, and data ingestion.
+\item Saved $\sim$8.6h/week by building a modular Python serverless solution on Azure Functions automating the IAM lifecycle across production PostgreSQL servers and corporate systems (1,000+ access operations, 300+ monthly audited tickets, 150+ users); later led its migration to GCP, provisioning production as code with Terraform.
+\item Cut discount execution latency by 72\% for the Aprix Connect event by automating the coupon workflow across Pipedrive and Sympla (REST APIs, Docker, Azure ACI/Logic Apps); built n8n automations that saved Customer Support $\sim$1.5h/week and governance audits 3h/week.
+\end{bul}
+
+\entry{Amazon}{Apr. 2025 -- Oct. 2025}{Data Scientist Intern (On-site, Luxembourg)}{}
+\begin{bul}
+\item Led a PoC for Amazon EU middle-mile operations, defining 24h/48h labor-planning guardrails across 10 UK Sort Centers. Built and validated ML forecasting pipelines (AutoGluon, AWS SageMaker) against operational heuristic baselines, achieving a 27.4\% uplift in same-day forecasting in PoC tests.
+\end{bul}
+
+\entry{Artefact \& CentraleSup\'elec}{Nov. 2024 -- Apr. 2025}{Artificial Intelligence Researcher (On-site, France)}{\href{https://github.com/LucasTramonte/OpenFinanceAI/blob/main/Assets/report/final_report.pdf}{\textit{Report}} $|$ \href{https://huggingface.co/datasets/artefactory/Argimi-Ardian-Finance-10k-text}{\textit{Dataset}}}
+\begin{bul}
+\item Achieved 84.6\% faithfulness on financial summaries, ESG compliance analysis, and investment recommendations across 100+ annual reports by designing a multimodal RAG system (ColPali/ColQwen2) that retrieves over report page images instead of lossy OCR'd text. Built for Ardian, a \$180B AUM private equity firm; validated 6+ automated evaluation metrics against human-labeled ground truth.
+\end{bul}
+
+\entry{BIOS - Brazilian Institute of Data Science}{Sep. 2022 -- Aug. 2023}{Machine Learning Researcher (On-site, Brazil)}{\href{https://github.com/LucasTramonte/SARS-CoV-2-Prediction-based-on-symptoms}{\textit{Github}}}
+\begin{bul}
+\item Awarded a CNPq research scholarship to study local ML interpretability (SHAP, LIME) for diagnosing SARS-CoV-2 from symptoms; accepted for poster presentation at EnCoRi.
+\end{bul}
+
+\entry{Eldorado \& Motorola}{Feb. 2022 -- Sep. 2022}{Data Scientist Intern (Remote, Brazil)}{}
+\begin{bul}
+\item Improved fault-detection precision to 73\% by replacing an unmaintainable rule-based system with an end-to-end ML pipeline for battery telemetry anomaly detection, using SHAP to turn hidden telemetry patterns into production-ready signals.
+\end{bul}
+
+\section{Education}
+\small
+\entry{\'Ecole CentraleSup\'elec, Universit\'e Paris-Saclay}{2023 -- 2025}{Master in Engineering, Specialization in Artificial Intelligence}{France}
+\begin{bul}
+\item Awarded the BRAFITEC Excellence Scholarship by CAPES (Brazilian federal government), granted to top-performing engineering students
+\end{bul}
+\entry{State University of Campinas (UNICAMP)}{2020 -- 2026}{B.S. in Industrial Engineering}{Brazil}
+
+\end{document}
